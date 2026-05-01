@@ -1,0 +1,42 @@
+<!-- Главная страница (только для оператора и админа) -->
+    <div class="card mb-4 bg-light">
+        <div class="card-body">
+            <h6 class="text-muted">Последний запрос</h6>
+            <div id="lastRequestInfo">Нет активных запросов</div>
+        </div>
+    </div>
+    <div class="chat-container p-3">
+        <div class="messages mb-3" style="height: 250px; overflow-y: auto;">
+            <div class="text-center text-muted">Введите ключевые слова через запятую для поиска</div>
+        </div>
+        <div id="searchBlock" class="input-group">
+            <input type="text" class="form-control" id="searchInput" placeholder="Пример: базальтовое волокно, композит, огнезащита">
+            <button class="btn btn-outline-secondary" id="filterBtn"><i class="fas fa-sliders-h"></i></button>
+            <button class="btn btn-primary" id="sendSearchBtn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+        <div id="filterPanel" class="mt-3 p-3 bg-light rounded" style="display: none;">
+            <h6>Фильтры</h6>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Страна</label>
+                    <select class="form-select" id="filterCountry" multiple size="2">
+                        <option value="ru">Россия</option>
+                        <option value="by">Беларусь</option>
+                        <option value="kz">Казахстан</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label>Предметная область</label>
+                    <select class="form-select" id="filterSubject" multiple size="2">
+                        <option value="basalt">Базальт</option>
+                        <option value="composite">Композиты</option>
+                        <option value="fire">Огнезащита</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mt-2">
+                <button class="btn btn-sm btn-secondary" id="resetFilters">Сбросить</button>
+                <button class="btn btn-sm btn-primary" id="applyFilters">Применить</button>
+            </div>
+        </div>
+    </div>

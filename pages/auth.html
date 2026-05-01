@@ -1,0 +1,33 @@
+<div class="row justify-content-center">
+    <div class="col-md-5">
+        <div class="card shadow">
+            <div class="card-body p-4">
+                <h3 class="text-center mb-4">Вход в систему</h3>
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label class="form-label">Логин (email)</label>
+                        <input type="email" class="form-control" id="loginEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Пароль</label>
+                        <input type="password" class="form-control" id="loginPassword" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Роль (для нового пользователя)</label>
+                        <select class="form-select" id="loginRole">
+                            <option value="marketer">Маркетолог</option>
+                            <option value="operator">Оператор</option>
+                            <option value="admin">Администратор</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Продолжить</button>
+                    <div class="alert alert-danger mt-3 small" id="loginError" style="display: none;"></div>
+                </form>
+                <hr>
+                <div class="text-center">
+                    <a href="#" id="showForgotLink">Запросить смену пароля</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

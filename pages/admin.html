@@ -1,0 +1,39 @@
+<h3>Управление пользователями</h3>
+<div class="card mb-4">
+    <div class="card-header bg-white">
+        <button class="btn btn-primary" id="showAddUserFormBtn"><i class="fas fa-plus"></i> Создать пользователя</button>
+    </div>
+    <div class="card-body">
+        <div id="addUserForm" style="display: none;" class="mb-4 p-3 border rounded">
+            <h5>Новый пользователь</h5>
+            <div class="row g-2">
+                <div class="col-md-6"><input type="text" id="newUserLastName" class="form-control" placeholder="Фамилия"></div>
+                <div class="col-md-6"><input type="text" id="newUserFirstName" class="form-control" placeholder="Имя"></div>
+                <div class="col-md-6"><input type="text" id="newUserPatronymic" class="form-control" placeholder="Отчество"></div>
+                <div class="col-md-6"><input type="text" id="newUserPhone" class="form-control" placeholder="Телефон"></div>
+                <div class="col-md-6"><input type="text" id="newUserPosition" class="form-control" placeholder="Должность"></div>
+                <div class="col-md-6"><input type="email" id="newUserEmail" class="form-control" placeholder="Логин (email)" required></div>
+                <div class="col-md-6"><input type="password" id="newUserPassword" class="form-control" placeholder="Пароль"></div>
+                <div class="col-md-6">
+                    <select id="newUserRole" class="form-select">
+                        <option value="marketer">Маркетолог</option>
+                        <option value="operator">Оператор</option>
+                        <option value="admin">Администратор</option>
+                    </select>
+                </div>
+                <div class="col-md-12">
+                    <button class="btn btn-success" id="createUserBtn">Создать</button>
+                    <button class="btn btn-secondary" id="cancelAddUserBtn">Отмена</button>
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead class="table-light">
+                    <tr><th>Логин</th><th>ФИО</th><th>Телефон</th><th>Должность</th><th>Роль</th><th>Действия</th></tr>
+                </thead>
+                <tbody id="usersTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+</div>

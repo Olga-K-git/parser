@@ -1,0 +1,56 @@
+:root {
+    --bs-primary: #ff8c00;
+}
+
+body {
+    background: #f4f6f9;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto;
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+    .btn-primary:hover {
+        background-color: #e67e00;
+    }
+
+.nav-link.active, .nav-link:hover {
+    color: var(--bs-primary);
+}
+
+.status-inwork {
+    background: #fff3cd;
+    color: #856404;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.status-completed {
+    background: #d4edda;
+    color: #155724;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.chat-container {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.page {
+    display: none;
+}
+
+    .page.active {
+        display: block;
+    }
+
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 140, 0, 0.05);
+    cursor: pointer;
+}

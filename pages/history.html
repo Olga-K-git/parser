@@ -1,0 +1,42 @@
+<h3>История запросов</h3>
+<div class="card mb-3 p-2 bg-light">
+    <div class="row g-2">
+        <div class="col-md-3"><input type="text" class="form-control" id="filterKeywords" placeholder="Ключевые слова"></div>
+        <div class="col-md-2"><input type="date" class="form-control" id="filterDate"></div>
+        <div class="col-md-2">
+            <select class="form-select" id="filterProject">
+                <option value="">Проект</option>
+                <option value="basalt">Базальт</option>
+                <option value="salt">Соли</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <select class="form-select" id="filterStatus">
+                <option value="">Статус</option>
+                <option value="inwork">В работе</option>
+                <option value="completed">Завершено</option>
+                <option value="error">Ошибка</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-primary w-100" id="applyHistoryFilters">Применить</button>
+        </div>
+    </div>
+</div>
+<div class="table-responsive">
+    <table class="table table-hover" id="historyTable">
+        <thead class="table-light">
+            <tr>
+                <th>Проект</th>
+                <th>Ключевые слова</th>
+                <th>Дата запуска</th>
+                <th>Дата результата</th>
+                <th>Статус</th>
+                <th>Оценки компаний</th>
+                <th>Комментарии к компаниям</th>
+            </tr>
+        </thead>
+        <tbody id="historyBody"></tbody>
+    </table>
+</div>
+<div id="emptyHistory" class="text-center text-muted py-4" style="display: none;">История запросов пуста</div>
