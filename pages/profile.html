@@ -1,13 +1,78 @@
-<div class="card mx-auto" style="max-width: 600px;">
-    <div class="card-body">
-        <h5 class="card-title">Личный кабинет</h5>
-        <div class="row mb-2"><div class="col-4 fw-bold">ФИО</div><div class="col-8" id="profileFullName"></div></div>
-        <div class="row mb-2"><div class="col-4 fw-bold">Логин</div><div class="col-8" id="profileEmail"></div></div>
-        <div class="row mb-2"><div class="col-4 fw-bold">Почта</div><div class="col-8" id="profileMail"></div></div>
-        <div class="row mb-2"><div class="col-4 fw-bold">Телефон</div><div class="col-8" id="profilePhone"></div></div>
-        <div class="row mb-2"><div class="col-4 fw-bold">Должность</div><div class="col-8" id="profilePosition"></div></div>
-        <div class="row mb-2"><div class="col-4 fw-bold">Роль</div><div class="col-8" id="profileRole"></div></div>
-        <hr>
-        <button class="btn btn-outline-danger" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Выход</button>
-    </div>
-</div>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БазалТех :: Личный кабинет</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <i class="fas fa-gem text-primary me-1"></i> БАЗАЛТЕХ
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">История запросов</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="profile.html"><i class="fas fa-user"></i> Личный кабинет</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admin.html"><i class="fas fa-cog"></i> Админка</a></li>
+                    <li class="nav-item"><a class="nav-link" href="auth.html"><i class="fas fa-sign-out-alt"></i> Выход</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4 page">
+        <div class="card mx-auto" style="max-width: 600px;">
+            <div class="card-body">
+                <h5 class="card-title mb-4">Личный кабинет</h5>
+                
+                <div class="row mb-3">
+                    <div class="col-4 fw-bold">ФИО:</div>
+                    <div class="col-8">Иванов Иван Иванович</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4 fw-bold">Логин:</div>
+                    <div class="col-8">operator@basalt.ru</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4 fw-bold">Почта:</div>
+                    <div class="col-8">operator@basalt.ru</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4 fw-bold">Телефон:</div>
+                    <div class="col-8">+7 (999) 123-45-67</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4 fw-bold">Должность:</div>
+                    <div class="col-8">Оператор</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4 fw-bold">Роль:</div>
+                    <div class="col-8">Оператор</div>
+                </div>
+                
+                <hr>
+                
+                <div class="d-flex gap-2">
+                    <button class="btn btn-primary" onclick="alert('Функция редактирования профиля')">
+                        <i class="fas fa-edit"></i> Редактировать
+                    </button>
+                    <a href="auth.html" class="btn btn-outline-danger">
+                        <i class="fas fa-sign-out-alt"></i> Выход
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
