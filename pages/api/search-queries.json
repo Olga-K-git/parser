@@ -1,0 +1,49 @@
+{
+  "queries": [
+    {
+      "id": 1,
+      "project": "Базальт",
+      "keywords": "базальтовое волокно, огнезащита",
+      "startDate": "02.05.2026, 10:30",
+      "endDate": "02.05.2026, 10:32",
+      "status": "completed",
+      "companyData": {
+        "1": { "rating": "suitable", "comment": "Отличный партнер" },
+        "2": { "rating": "suitable", "comment": "" }
+      }
+    },
+    {
+      "id": 2,
+      "project": "Соли",
+      "keywords": "хлорид натрия, калий",
+      "startDate": "02.05.2026, 11:00",
+      "endDate": "",
+      "status": "inwork",
+      "companyData": {}
+    },
+    {
+      "id": 3,
+      "project": "Базальт",
+      "keywords": "композитные материалы",
+      "startDate": "01.05.2026, 09:15",
+      "endDate": "01.05.2026, 09:20",
+      "status": "completed",
+      "companyData": {
+        "1": { "rating": "not_suitable", "comment": "Не подходит" },
+        "2": { "rating": "not_suitable", "comment": "" }
+      }
+    },
+    {
+      "id": 4,
+      "project": "Базальт",
+      "keywords": "огнезащита, покрытия",
+      "startDate": "30.04.2026, 15:45",
+      "endDate": "30.04.2026, 15:50",
+      "status": "completed",
+      "companyData": {
+        "1": { "rating": "suitable", "comment": "Хороший" },
+        "2": { "rating": "not_suitable", "comment": "Плохой" }
+      }
+    }
+  ]
+}
